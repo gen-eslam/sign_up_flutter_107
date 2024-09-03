@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:third_project_107/utils/app_color.dart';
+import 'package:third_project_107/widgets/logo.dart';
 
 class ImageWithTitle extends StatelessWidget {
   const ImageWithTitle({
@@ -10,9 +11,7 @@ class ImageWithTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.network(
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJA32WU4rBpx7maglqeEtt3ot1tPIRWptxA&s",
-        ),
+        Logo(),
         const SizedBox(
           height: 23,
         ),

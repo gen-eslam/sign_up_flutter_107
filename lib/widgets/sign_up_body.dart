@@ -6,6 +6,7 @@ import 'package:third_project_107/widgets/custom_elevated_button.dart';
 import 'package:third_project_107/widgets/custom_outlined_button.dart';
 import 'package:third_project_107/widgets/cutom_text_form_field.dart';
 import 'package:third_project_107/widgets/image_with_title.dart';
+import 'package:third_project_107/widgets/sign_up_form.dart';
 
 class SignUpBody extends StatelessWidget {
   const SignUpBody({super.key});
@@ -28,38 +29,7 @@ class SignUpBody extends StatelessWidget {
           const SizedBox(
             height: 23,
           ),
-          const CustomTextFormField(
-            icon: Icons.email,
-            hintText: "Email",
-          ),
-          const SizedBox(
-            height: 23,
-          ),
-          const CustomTextFormField(
-            icon: Icons.password,
-            hintText: "Password",
-            isPassword: true,
-          ),
-          const SizedBox(
-            height: 23,
-          ),
-          CustomElevatedButton(
-            title: "Sign Up",
-            onPressed: () {},
-          ),
-          const SizedBox(
-            height: 15,
-          ),
-          CustomOutlinedButton(
-            onPressed: () {},
-            children: const [
-              Icon(Icons.abc_outlined),
-              SizedBox(
-                width: 20,
-              ),
-              Text("Sign Up With Goolgle")
-            ],
-          ),
+          const SignUpForm(),
           const SizedBox(
             height: 15,
           ),
